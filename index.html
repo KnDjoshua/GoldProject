@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gold Empire</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold Empire</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- EMAIL GATE -->
-  <div id="emailGate" class="gate">
-    <div class="gate-box">
-      <h2>Enter Your Email to Continue</h2>
-      <input type="email" id="emailInput" placeholder="you@example.com" required />
-      <button onclick="continueToSite()">Enter</button>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="typewriter-text" id="typewriter"></div>
     </div>
-  </div>
 
-  <!-- MAIN CONTENT -->
-  <div id="mainContent" class="hidden">
-    <header>
-      <h1>GOLD EMPIRE</h1>
-      <p>Trusted Source. Pure Gold. Direct to You.</p>
-    </header>
+    <!-- EMAIL GATE -->
+    <!-- <div id="emailGate" class="gate">
+        <div class="gate-box">
+            <h2>Enter Your Email to Continue</h2>
+            <input type="email" id="emailInput" placeholder="you@example.com" required />
+            <button onclick="continueToSite()">Enter</button>
+        </div>
+    </div> -->
 
-    <section class="products">
-      <div class="product">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Gold_bar_2.jpg/800px-Gold_bar_2.jpg" alt="Gold Bar">
-        <h3>Gold Bar (1kg)</h3>
-        <p>99.99% purity. Ideal for bulk investment.</p>
-        <span>$65,000</span>
-        <a href="https://wa.me/256701234567?text=I'm%20interested%20in%20the%201kg%20Gold%20Bar" target="_blank">Order Now</a>
-      </div>
+    <!-- MAIN CONTENT -->
+    <div id="main-content" class="hidden">
+        <header>
+            <section class="navigation">
+                <h1>Gold Empire</h1>
+                <p class="marq">Trusted Source. Pure Gold. Direct to You.</p>
+            </section>
+        </header>
 
-      <div class="product">
-        <img src="/gold images/dole777-EQSPI11rf68-unsplash.jpg" alt="Gold Nuggets">
-        <h3>Gold Nuggets (500g)</h3>
-        <p>Hand-mined and high-quality raw gold.</p>
-        <span>$28,000</span>
-        <a href="/gold images/dole777-EQSPI11rf68-unsplash.jpg" target="_blank">Order Now</a>
-      </div>
+        <section class="products">
+            <div class="product">
+                <img src="/gold_images/dole777-EQSPI11rf68-unsplash.jpg" alt="Gold Bar">
+                <h3>Gold Bar (1kg)</h3>
+                <p>99.99% purity. <br> Ideal for bulk investment.</p>
+                <span>$65,000</span>
+                <a href="https://wa.me/256701234567?text=I'm%20interested%20in%20the%201kg%20Gold%20Bar"
+                    target="_blank">Order Now</a>
+            </div>
 
-      <div class="product">
-        <img src="/gold images/dole777-EQSPI11rf68-unsplash.jpg" alt="Gold Dust">
-        <h3>Gold Dust (250g)</h3>
-        <p>High-purity gold dust for lab and smelting use.</p>
-        <span>$13,500</span>
-        <a href="https://wa.me/256701234567?text=Interested%20in%20buying%20Gold%20Dust%20250g" target="_blank">Order Now</a>
-      </div>
-    </section>
+            <div class="product">
+                <img src="/gold_images/dole777-EQSPI11rf68-unsplash.jpg" alt="Gold Nuggets">
+                <h3>Gold Nuggets (500g)</h3>
+                <p>Hand-mined <br> and high-quality raw gold.</p>
+                <span>$28,000</span>
+                <a href="/gold_images/dole777-EQSPI11rf68-unsplash.jpg" target="_blank">Order Now</a>
+            </div>
 
-    <footer>
-      <p>📞 WhatsApp: <a href="https://wa.me/256701234567">+256 701 234 567</a></p>
-      <p>💳 Payments Accepted: MTN | Airtel | Flutterwave</p>
-      <p>&copy; 2025 Gold Empire. All Rights Reserved.</p>
-    </footer>
-  </div>
+            <div class="product">
+                <img src="/gold_images/dole777-EQSPI11rf68-unsplash.jpg" alt="Gold Dust">
+                <h3>Gold Dust (250g)</h3>
+                <p>High-purity gold dust for <br> lab and smelting use.</p>
+                <span>$13,500</span>
+                <a href="https://wa.me/256701234567?text=Interested%20in%20buying%20Gold%20Dust%20250g"
+                    target="_blank">Order Now</a>
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+        <footer>
+            <p>📞 WhatsApp: <a href="https://wa.me/256701234567">+256 701 234 567</a></p>
+            <p>💳 Payments Accepted: MTN | Airtel | Flutterwave</p>
+            <p>&copy; 2025 Gold Empire. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
