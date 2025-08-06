@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+
+h1,h2,h3,h4,h5,h6,p {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal; */
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 20px;
+  background: linear-gradient(to right, #111, #2e1f0c);
+}
+
+header h1 {
+  font-size: 3em;
+  color: gold;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 40px 20px;
+  background: #ff0000;
+}
+
+.product {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px gold;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  color: gold;
+  margin: 10px 0;
+}
+
+.product span {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+}
+
+.product a {
+  display: inline-block;
+  padding: 10px 15px;
+  background: gold;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  background: #111;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+footer a {
+  color: gold;
+  text-decoration: none;
+}
+
+/* Email Gate */
+.gate {
+  background: #000;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gate-box {
+  background: #1a1a1a;
+  padding: 40px;
+  border: 1px solid gold;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px gold;
+}
+
+.gate-box input {
+  padding: 10px;
+  width: 80%;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+.gate-box button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: gold;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
