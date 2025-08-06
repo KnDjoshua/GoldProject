@@ -17,3 +17,41 @@ window.onload = () => {
     document.getElementById('mainContent').classList.remove('hidden');
   }
 };
+
+// preloder
+  const messages = [
+    "Trusted Source.",
+    "Pure Gold.",
+    "Direct to You."
+  ];
+
+  const typewriter = document.getElementById("typewriter");
+  let messageIndex = 0;
+  let charIndex = 0;
+
+  function typeMessage() {
+    if (charIndex < messages[messageIndex].length) {
+      typewriter.textContent += messages[messageIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(typeMessage, 100); // Speed of typing
+    } else {
+      // Pause before clearing and moving to next message
+      setTimeout(() => {
+        messageIndex++;
+        if (messageIndex < messages.length) {
+          typewriter.textContent = "";
+          charIndex = 0;
+          typeMessage();
+        }
+      }, 1000); // Pause between phrases
+    }
+  }
+
+  // Start typing
+  typeMessage();
+
+  // Remove preloader after 10 seconds
+  setTimeout(() => {
+    document.getElementById("preloader").classList.add("fade-out");
+    document.getElementById("main-content").style.display = "block";
+  }, 8000);
